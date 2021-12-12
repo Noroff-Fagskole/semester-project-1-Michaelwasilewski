@@ -16,21 +16,27 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <nav>
+       <div class="container">
         <div class="nav-desktop">
           <a href="#">
             <img class="logo" src="/img/atom-svgrepo-com.png" alt="CSM-Logo"
           /></a>
+          <input type="checkbox" id="nav-toggle" class="nav-toggle">
           <ul class="nav">
             <li><a href="/.exhibits.html">Exhibits</a></li>
             <li><a href="/.engage.html">Engage</a></li>
             <li><a href="/aout.html">About</a></li>
             <li><a href="/.donate.html">Donate</a></li>
-            <input type="text" />
             <li><a href="/.visitus.html">Visit us</a></li>
           </ul>
+          <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+          </label>
         </div>
-      </div>
+       </div>
+      </nav>
+      </header>
       <section class="herocontainer hero-banner header-pic">
         <div class="herob-text">
           <h1 class="herotext1">Community Science Museum</h1>
@@ -41,14 +47,100 @@
         Learn about science, explore exhibitions and travel back in time
       </h1>
       <main class="top-section">
-        <div class="main-container">
-        <div class="left">
-          <div class="right">
-
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img
+                class="topsection-pic"
+                src="/img/sciencelady.jpg"
+                alt="ScienceExpo"
+              />
+              <h2>Visiting Professor of Aeronautics</h2>
+              <p>
+                It is our pleasure to announce that Prof Sheila Widnall from the
+                Massachusetts Institute of Technology will be delivering 3
+                lectures on the development of aeronautics and where the future
+                lies in this exciting ‘space’.
+              </p>
+              <button class="science">
+                Learn Science <i class="fas fa-atom"></i>
+              </button>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <img
+                class="topsection-pic"
+                src="/img/mammoth.jpg"
+                alt="Mammoth"
+              />
+              <h2>Night in the Museum</h2>
+              <p>
+                Get your family together for an exciting night in the museum as
+                you sleep over beside dinosaurs and science displays. Bring your
+                own sleeping bag and get ready to rough it as we go exploring
+                the wonders of science.
+              </p>
+              <button class="visit">
+                Plan Your Visit <i class="far fa-calendar"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    <section>
+      <div class="midsection-column">
+        <img
+          class="midsection-pic"
+          src="/img/stem-t4l-l862hX_FET8-unsplash(1).jpg"
+          alt="kids playing virtual reality"
+        />
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-row">
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Researchers</a></li>
+              <li><a href="#">For Teachers</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li><a href="#">Monday..........................CLOSED </a></li>
+              <li><a href="#">Tuesday...................10.00-16.00</a></li>
+              <li><a href="#">Wednesday............10.00-16.00</a></li>
+              <li><a href="#">Thursday.................10.00-16.00 </a></li>
+              <li><a href="#">Friday.......................09.00-19.00</a></li>
+              <li><a href="#">Saturday.................09.00-16.00</a></li>
+              <li><a href="#">Sunday....................09.00-13.00</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Location</h4>
+            <p>Visit us in the heart of oslo at Vulkan 5,0178 Oslo</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.6000378362528!2d10.749838216096292!3d59.92218498187022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e65a294248f%3A0xf993f57b39780819!2sVulkan%205%2C%200178%20Oslo!5e0!3m2!1sno!2sno!4v1638839526198!5m2!1sno!2sno" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+            <div class="footer-column">
+              <h4>Follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      </main>
-    </header>
+    </footer>
   </body>
 </html>
