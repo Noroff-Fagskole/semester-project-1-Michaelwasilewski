@@ -1,0 +1,40 @@
+section {
+    padding: 4rem 0;
+}
+p {
+    margin-bottom: 1em;
+}
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.split-columns {
+    display: flex;
+    flex-direction: column;
+}
+.split-columns h2 {
+    font-family: "Trocchi";
+    color: #b960b8;
+    font-size: 2em;
+
+}
+.secondary {
+    max-width: 100%;
+    display: block;
+}
+@media (min-width:40em) {
+    .split-columns {
+        flex-direction: row;
+    }
+
+    .split-columns > * {
+        flex-basis: 100%;
+    }
+    .split-columns > * + * {
+        margin-left: 2em;
+    }
+    section {
+        padding: 5rem 0;
+    }
+}
