@@ -16,7 +16,8 @@ p {
 .split-columns h2 {
     font-family: "Trocchi";
     color: #b960b8;
-    font-size: 2em;
+    font-size: 2.5em;
+    text-align: center;
 
 }
 .secondary {
