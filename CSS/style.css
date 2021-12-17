@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto:wght@300;400;500;700&family=Trocchi&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
 }
+
 h1 {
   text-align: center;
 }
@@ -21,15 +23,19 @@ header {
   z-index: 99999;
   width: 100%;
 }
+
 /* Nav bar */
+
 .nav-toggle {
   position: absolute;
   left: -12200px;
   top: -12200px;
 }
+
 .nav-toggle:focus ~ .nav-toggle-label {
   outline: 1px;
 }
+
 .nav-toggle-label {
   position: absolute;
   top: 0;
@@ -39,6 +45,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -49,14 +56,17 @@ header {
   border-radius: 2px;
   position: relative;
 }
+
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
 }
+
 .nav-toggle-label span::before {
   bottom: 7px;
 }
+
 .nav-toggle-label span::after {
   top: 7px;
 }
@@ -74,12 +84,14 @@ nav {
   transform-origin: top;
   transition: transform 400ms ease-in-out;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
   width: 100%;
 }
+
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
@@ -93,9 +105,11 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
+
 nav a:hover {
   color: #2b2b2b;
 }
+
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
 }
@@ -104,6 +118,7 @@ nav a:hover {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
+
 .nav-desktop {
   height: 100%;
   display: flex;
@@ -111,6 +126,7 @@ nav a:hover {
   flex-direction: row;
   align-items: flex-start;
 }
+
 /* nav end */
 
 .herocontainer {
@@ -133,6 +149,7 @@ nav a:hover {
   color: #f5f0f0;
   margin-top: 150px;
 }
+
 .herotext2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -142,6 +159,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
 }
+
 .header-pic {
   position: relative;
   height: 500px;
@@ -152,37 +170,48 @@ nav a:hover {
   background-size: cover;
   opacity: 0.9;
 }
+
 .container {
   padding: 10px;
 }
+
 /* Herobanner end */
+
+/* Main top section */
+
 .breadcrums {
   padding: 30px;
   list-style: none;
 }
+
 .breadcrums li {
   display: inline;
   font-size: 18px;
   font-family: 'Roboto';
 }
+
 .breadcrums li + li::before {
   padding: 8px;
   color: black;
   content: '/\00a0';
 }
+
 .breadcrums li a {
   color: #0275d8;
   text-decoration: none;
 }
+
 .breadcrums li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+
 .active {
   color: #0275d8;
   font-weight: 600;
   font-size: 24px;
 }
+
 .title {
   display: flex;
   font-family: 'Roboto';
@@ -193,11 +222,11 @@ nav a:hover {
   margin-bottom: 15px;
   color: #b960b8;
 }
-/* Main top section */
 
 .top-section {
   display: flex;
 }
+
 .row {
   display: flex;
   justify-content: space-around;
@@ -210,11 +239,13 @@ nav a:hover {
   display: table;
   clear: both;
 }
+
 .column {
   width: 100%;
   float: left;
   padding: 0 10px;
 }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -223,11 +254,15 @@ nav a:hover {
   margin-inline: auto;
   width: min(90%, 70.5rem);
 }
+
 .card h2 {
   font-family: 'Roboto';
-  color: #b960b8;
+  color: #2b2b2b;
   font-size: 2.5em;
 }
+
+/* Buttons */
+
 .science {
   border: none;
   padding: 12px 24px;
@@ -241,6 +276,7 @@ nav a:hover {
   font-weight: 300;
   margin-top: 15px;
 }
+
 .visit {
   border: none;
   padding: 12px 24px;
@@ -254,22 +290,28 @@ nav a:hover {
   font-weight: 300;
   margin-top: 15px;
 }
+
 .visit:hover {
   background-color: #f12886;
+
 }
 .science:hover {
   background-color: azure;
 }
+/* buttons end */
 p {
   font-size: 1.5em;
   color: #213e59;
 }
+
 .topsection-pic {
   width: 100%;
 }
+
 /* Top section end */
 
 /* Mid section */
+
 .midsection-column {
   height: 10vh;
   display: flex;
@@ -278,7 +320,9 @@ p {
 .bold {
   font-weight: 400;
 }
+
 /* Mid section end */
+
 .botsection-title {
   margin-top: 30px;
   border-bottom: 1px solid black;
@@ -289,6 +333,7 @@ p {
   display: flex;
   margin-left: 122px;
 }
+
 .botsection-undertitle {
   font-family: 'Roboto';
   font-weight: 300;
@@ -296,23 +341,29 @@ p {
   margin-left: 122px;
   color: #f5f0f0;
 }
+
 /* Footer */
+
 .footer {
   background-color: #e6ddff;
   padding: 70px 0;
 }
+
 .footer-container {
   max-width: 1170px;
   margin: auto;
 }
+
 .footer-row {
   display: flex;
   flex-wrap: wrap;
 }
+
 .footer-column {
   width: 25%;
   padding: 0 20px;
 }
+
 .footer-column h4 {
   font-size: 24px;
   color: #192f44;
@@ -321,12 +372,15 @@ p {
   font-family: 'Roboto';
   font-weight: 400;
 }
+
 .footer-column ul li {
   list-style-type: none;
 }
+
 .footer-column ul li:not(:last-child) {
   margin-bottom: 25px;
 }
+
 .footer-column ul li a {
   font-size: 18px;
   text-decoration: none;
@@ -334,9 +388,11 @@ p {
   font-weight: 300;
   transition: all 0.3s ease;
 }
+
 .footer-column ul li a:hover {
   padding-left: 8px;
 }
+
 .footer-column .social-links a {
   display: inline-block;
   height: 40px;
@@ -349,10 +405,12 @@ p {
   color: #fff;
   transition: all 0, 5s ease;
 }
+
 .footer-column .social-links a:hover {
   color: #2b2b2b;
   background-color: #dc72d1;
 }
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -360,6 +418,7 @@ p {
   position: relative;
   height: 0;
 }
+
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -367,6 +426,7 @@ p {
   width: 100%;
   position: absolute;
 }
+
 /* Footer end */
 
 @media screen and (min-width: 1024px) {
