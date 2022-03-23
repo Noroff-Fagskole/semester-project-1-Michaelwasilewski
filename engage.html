@@ -10,7 +10,9 @@
     />
     <meta name="description" content="Get involved." />
     <title>Community Science Museum get involved</title>
+    <link rel="stylesheet" href="/CSS/form.css">
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/modal.css">
     <link rel="stylesheet" href="/CSS/engagestyles.css" />
     <link
       rel="stylesheet"
@@ -84,6 +86,7 @@
               can join other children your age to go on a journey of discovery.
               New theme each holiday!
             </p>
+            
             <button class="science">
               Learn Science <i class="fas fa-atom"></i>
             </button>
@@ -114,9 +117,97 @@
               Join us once a week on a saturday between 10:00 and 13:00 where
               you’ll get to explore and experiment with our team of experts!
             </p>
-            <button class="visit">
+            <button class="visit" id="myBtn">
               Learn Science <i class="fas fa-atom"></i>
             </button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="form-container">
+                  <form action="#">
+                    <div class="form-row">
+                      <div class="column-25">
+                        <label for="FirstName">First name</label>
+                      </div>
+                      <div class="column-75">
+                        <input
+                          type="text"
+                          name="firstname"
+                          id="fname"
+                          placeholder="Your Name.."
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="column-25">
+                        <label for="lastname">Last Name</label>
+                      </div>
+                      <div class="column-75">
+                        <input type="text" id="lastname" placeholder="Your last name.." />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="column-25">
+                        <label for="lastname">School / Company name</label>
+                      </div>
+                      <div class="column-75">
+                        <input
+                          type="text"
+                          id="lastname"
+                          placeholder="John Doe's Community Science Museum"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="column-25">
+                        <label for="Type of visit">Tour</label>
+                      </div>
+                      <div class="column-75">
+                        <select id="Visit" name="Tour">
+                          <option alt="Guided tour with proffesional" value="Guided Tour">Guided Tour</option>
+                          <option alt="Family event" value="Guided Tour">Family visit</option>
+                          <option alt="Spend the night event" value="Guided Tour">Night in the museum</option>
+                          <option alt="School trip package" value="Guided Tour">Organized school trip</option>
+                          <option alt="Club member package" value="Guided Tour">Winter World (Special Holidays Club)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="column-25">
+                        <label for="Type of visit">Guest's</label>
+                      </div>
+                      <div class="column-75">
+                        <select id="Visit" name="Tour">
+                          <option name="amount" value="0" selected="selected">0</option>
+                          <option name="amount" value="1">1-3</option>
+                          <option name="amount" value="2">3-6</option>
+                          <option name="amount" value="3">6-12</option>
+                          <option name="amount" value="4">12-20</option>
+                          <option name="amount" value="5">20+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="column-25">
+                        <label for="Tell us what you need"
+                          >Anything else? We would love to hear from you</label
+                        >
+                      </div>
+                      <div class="column-75">
+                        <textarea
+                          name="Subject"
+                          id="subject"
+                          placeholder="Tell us what you need!"
+                          style="height: 200px"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <input type="submit" value="Submit" />
+                    </div>
+                  </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -238,5 +329,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0]; 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      
   </body>
 </html>
