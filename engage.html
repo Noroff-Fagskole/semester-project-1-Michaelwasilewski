@@ -56,6 +56,7 @@
           <li><a href="/engage.html">Engage</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/visit.html">Visit</a></li>
+          <li><a href="/cart.html">Booking</a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
@@ -75,6 +76,7 @@
       <li><a class="active" href="/engage.html">Engage</a></li>
       <li><a href="/about.html">About</a></li>
       <li><a href="/visit.html">Visit</a></li>
+      <li><a href="/cart.html">Booking</a></li>
     </ul>
     <h1 class="title">Fun and educational programs for everyone</h1>
 
@@ -93,13 +95,13 @@
                   Learn Science <i class="fas fa-atom"></i>
                 </button>
                 <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <div class="form-container">
-                            <form action="#" id="form">
-                                <div class="form-row">
-                                  <div class="column-25">
-                                    <label for="FirstName">First name</label>
+                  <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="form-container">
+                        <form action="#" id="form">
+                          <div class="form-row">
+                                <div class="column-25">
+                                  <label for="FirstName">First name</label>
                                   </div>
                                   <div class="column-75">
                                     <input
@@ -114,9 +116,11 @@
                                   <div class="column-25">
                                     <label for="lastname">Last Name</label>
                                   </div>
+
                                   <div class="column-75">
                                     <input type="text" id="lastname" placeholder="Your last name.." />
                                   </div>
+                                  <div class="error"></div>
                                 </div>
                                 <div class="form-row">
                                   <div class="column-25">
@@ -125,10 +129,11 @@
                                   <div class="column-75">
                                     <input
                                       type="text"
-                                      id="lastname"
+                                      id="schoolname"
                                       placeholder="John Doe's Community Science Museum"
                                     />
                                   </div>
+                                  <div class="error"></div>
                                 </div>
                                 <div class="form-row">
                                   <div class="column-25">

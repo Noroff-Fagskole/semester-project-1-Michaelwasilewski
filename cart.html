@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Visit us, located at vulkan 5. Open from tuesday to sunday"
+      content="Science Museum, Technology, biology, ecology, space, universe, dinosaurs, interactive museum, donate"
     />
-    <title>Community Science Museum visit uss</title>
+    <title>Community Science Museum booking page</title>
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link rel="stylesheet" href="/CSS/form.css" />
+    <link rel="stylesheet" href="/CSS/store.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -18,8 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/js/contact.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/js/store.js" async></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4S5LSHJT8V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -52,14 +52,13 @@
           <li><a href="/engage.html">Engage</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/visit.html">Visit</a></li>
-          <li><a href="/visit.html">Visit</a></li>
+          <li><a href="/cart.html">Booking</a></li>
         </ul>
       </nav>
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
       </label>
     </header>
-
     <section class="herocontainer hero-banner header-pic">
       <div class="herob-text">
         <h2 class="herotext1">Community Science Museum</h2>
@@ -67,91 +66,69 @@
       </div>
     </section>
     <section>
-      <ul class="breadcrums">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/exhibits.html">Exhibits</a></li>
-        <li><a href="/engage.html">Engage</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a class="active" href="/visit.html">Visit</a></li>
-      </ul>
+        <ul class="breadcrums">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/exhibits.html">Exhibits</a></li>
+          <li><a href="/engage.html">Engage</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/visit.html">Visit</a></li>
+          <li><a class="active" href="/cart.html">Booking</a></li>
+        </ul>
+      </section>
+    <section class="container content-section">
+        <h2 class="section-header">Online Booking</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Night at the Museum</span>
+                <img class="shop-item-image" src="/img/mammoth.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Guided Tour</span>
+                <img class="shop-item-image" src="/img/clubkids2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">School Trip</span>
+                <img class="shop-item-image" src="/img/childrenmuseum.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Winter Wonderland</span>
+                <img class="shop-item-image" src="/img/winterwonderland.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <div class="form-container">
-      <form action="#" id="form">
-        <div class="form-row">
-          <div class="column-25">
-            <label for="FirstName">Fullname</label>
-          </div>
-          <div class="column-75">
-            <input
-              type="text"
-              name="name"
-              id="fname"
-              placeholder="Your Name.."
-            />
-          </div>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="lastname">School / Company name</label>
-          </div>
-          <div class="column-75">
-            <input
-              type="text"
-              id="lastname"
-              placeholder="John Doe's Community Science Museum"
-            />
-          </div>
+        <div class="cart-items">
         </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="Type of visit">Tour</label>
-          </div>
-          <div class="column-75">
-            <select id="Visit" name="Tour">
-              <option alt="Guided tour with proffesional" value="Guided Tour">Guided Tour</option>
-              <option alt="Family event" value="Guided Tour">Family visit</option>
-              <option alt="Spend the night event" value="Guided Tour">Night in the museum</option>
-              <option alt="School trip package" value="Guided Tour">Organized school trip</option>
-              <option alt="Club member package" value="Guided Tour">Winter World (Special Holidays Club)</option>
-            </select>
-          </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
         </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="Type of visit">Guest's</label>
-          </div>
-          <div class="column-75">
-            <select id="Visit" name="Tour">
-              <option name="amount" value="0" selected="selected">0</option>
-              <option name="amount" value="1">1-3</option>
-              <option name="amount" value="2">3-6</option>
-              <option name="amount" value="3">6-12</option>
-              <option name="amount" value="4">12-20</option>
-              <option name="amount" value="5">20+</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="Tell us what you need"
-              >Anything else? We would love to hear from you</label
-            >
-          </div>
-          <div class="column-75">
-            <textarea
-              name="Subject"
-              id="subject"
-              placeholder="Tell us what you need!"
-              style="height: 200px"
-            ></textarea>
-          </div>
-        </div>
-        <div class="form-row">
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
-    </div>
-
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    
+    
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-row">
