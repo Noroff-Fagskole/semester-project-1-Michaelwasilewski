@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="/js/contact.js"></script>
+    <script src="/js/contact.js" defer></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4S5LSHJT8V"></script>
 <script>
@@ -75,82 +75,66 @@
         <li><a class="active" href="/visit.html">Visit</a></li>
       </ul>
     </section>
-    <div class="form-container">
-      <form action="#" id="form">
-        <div class="form-row">
-          <div class="column-25">
-            <label for="FirstName">Fullname</label>
+    <section><div class="container">
+      <form id="form" action="/">
+          <div class="input-control">
+              <label for="username">Full name</label>
+              <input type="text" name="firstname" id="username">
+              <div class="error"></div>
           </div>
-          <div class="column-75">
-            <input
-              type="text"
-              name="name"
-              id="fname"
-              placeholder="Your Name.."
-            />
+          <div class="input-control">
+              <label for="email">email</label>
+              <input type="text" name="username" id="email">
+              <div class="error"></div>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="lastname">School / Company name</label>
-          </div>
-          <div class="column-75">
-            <input
-              type="text"
-              id="lastname"
-              placeholder="John Doe's Community Science Museum"
-            />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="Type of visit">Tour</label>
-          </div>
-          <div class="column-75">
-            <select id="Visit" name="Tour">
-              <option alt="Guided tour with proffesional" value="Guided Tour">Guided Tour</option>
-              <option alt="Family event" value="Guided Tour">Family visit</option>
-              <option alt="Spend the night event" value="Guided Tour">Night in the museum</option>
-              <option alt="School trip package" value="Guided Tour">Organized school trip</option>
-              <option alt="Club member package" value="Guided Tour">Winter World (Special Holidays Club)</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="Type of visit">Guest's</label>
-          </div>
-          <div class="column-75">
-            <select id="Visit" name="Tour">
-              <option name="amount" value="0" selected="selected">0</option>
-              <option name="amount" value="1">1-3</option>
-              <option name="amount" value="2">3-6</option>
-              <option name="amount" value="3">6-12</option>
-              <option name="amount" value="4">12-20</option>
-              <option name="amount" value="5">20+</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="column-25">
-            <label for="Tell us what you need"
-              >Anything else? We would love to hear from you</label
-            >
-          </div>
-          <div class="column-75">
-            <textarea
-              name="Subject"
-              id="subject"
-              placeholder="Tell us what you need!"
-              style="height: 200px"
-            ></textarea>
-          </div>
-        </div>
-        <div class="form-row">
-          <input type="submit" value="Submit" />
-        </div>
+          <div class="form-row">
+              <div class="column-25">
+                <label for="Type of visit">Tour</label>
+              </div>
+              <div class="column-75">
+                <select id="Visit" name="Tour">
+                  <option alt="Guided tour with proffesional" value="Guided Tour">Guided Tour</option>
+                  <option alt="Family event" value="Guided Tour">Family visit</option>
+                  <option alt="Spend the night event" value="Guided Tour">Night in the museum</option>
+                  <option alt="School trip package" value="Guided Tour">Organized school trip</option>
+                  <option alt="Club member package" value="Guided Tour">Winter World (Special Holidays Club)</option>
+                </select>
+              </div>
+            </div>
+          <div class="form-row">
+              <div class="column-25">
+                <label for="Type of visit">Guest's</label>
+              </div>
+              <div class="column-75">
+                <select id="Visit" name="Tour">
+                  <option name="amount" value="0" selected="selected">0</option>
+                  <option name="amount" value="1">1-3</option>
+                  <option name="amount" value="2">3-6</option>
+                  <option name="amount" value="3">6-12</option>
+                  <option name="amount" value="4">12-20</option>
+                  <option name="amount" value="5">20+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="column-25">
+                <label for="Tell us what you need"
+                  >Anything else? We would love to hear from you</label
+                >
+              </div>
+              <div class="column-75">
+                <textarea
+                  name="Subject"
+                  id="subject"
+                  placeholder="Tell us what you need!"
+                  style="height: 200px"
+                ></textarea>
+              </div>
+            </div>
+          <button type="submit">Submit</button>
       </form>
     </div>
+  </section>
 
     <footer class="footer">
       <div class="footer-container">
