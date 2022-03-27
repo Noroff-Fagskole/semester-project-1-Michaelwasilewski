@@ -1,59 +1,48 @@
-body {
-    background:rgb(128, 11, 128);
-    font-family: 'Poppins', sans-serif;
-}
-
-#form {
-    width: 300px;
-    margin: 20vh auto 0 auto;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-#form h1 {
-    color: #0f2027;
-    text-align: center;
-}
-
-#form button {
-    padding: 10px;
-    margin-top: 10px;
+input[type=text], select, textarea {
     width: 100%;
-    color: white;
-    background-color: rgb(41, 57, 194);
-    border: none;
+    padding: 12px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
 }
 
-.input-control {
-    display: flex;
-    flex-direction: column;
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+input[type=submit]{
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+}
+.form-container {
+    border-radius: 5px;
+    padding: 20px;
+}
+.column-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.column-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.form-row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.input-control input {
-    border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-size: 12px;
-	padding: 10px;
-}
-
-.input-control input:focus {
-    outline: 0;
-}
-
-.input-control.success input {
-    border-color: #09c372;
-}
-
-.input-control.error input {
-    border-color: #ff3860;
-}
-
-.input-control .error {
-    color: #ff3860;
-    font-size: 9px;
-    height: 13px;
+@media screen and (max-width:600px) {
+    .column-25, .column-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
