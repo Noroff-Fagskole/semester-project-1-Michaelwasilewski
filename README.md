@@ -1,42 +1,54 @@
-<img src="./.readme/noroff-light.png" width="160" align="right">
-
-# Semester Project - One
-
-## Brief
-
  **Science museum website**
- 
+
+# Community Science Museum
+
+![image](https://user-images.githubusercontent.com/89254319/171575810-d3fc77b8-b370-4072-ab79-ae29f73528fe.png)
+
+
+
+## Description
+
+This project was about creating a science museum website for kids from ages 7 to 15 and families with children.
+
+You can add some bullet points if you'd like to:
+
 - An interactive science museum called the Community Science Museum is opening in your town/city.
 - Its core target audience is primary and middle school children (7-15) and families with young children.
 - The museum wants a website that is informative and appealing, that will attract both middle school pupils and their parents.
-- The site should appeal to youngsters without pandering; it should take for granted that the audience is inquisitive and intelligent.
-- The website should be informative and engaging, but should encourage viewers to visit the museum itself.
-- The website should be responsive and be easy to use on a variety of devices.
+- Website is responsive and looks nice on all screen sizes.
 
-## FAQ
+## Built With
 
-- Work Schedule: Create a detailed work schedule, complete with milestones for design, coding, testing, and report. This must be submitted with your final report.
-- Target Audience & Design: The target audience should be carefully considered, and the proposed design should reflect this. A prototype of the website should be made using your chosen software (Adobe XD, Figma etc.)
-- Final Product: A URL and zip file with the final website should be submitted. The site should be tested on a variety of devices before final delivery. The student has responsibility for setting up their own web host, or using Netlify to deploy the site. GitHub repositories should be set to private.
+You can list a the tech stack that you've used over here
 
-## Marking Criteria
-- Can apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS
-- Can apply vocational knowledge to practical problems in web development with emphasis on design process, aesthetics and the use of HTML and CSS
-- Masters industry-relevant tools, techniques and expressions in design process and development of websites in accordance with regulations and guidelines for universal design
-- Can study and document his/her own work processes and identify design related issues and what measures needs to be implemented
+- HTML
+- CSS
+- Javascript
+ 
 
-## Rules
-- Copying and sharing of any code will result in your project being failed.
+## Getting Started
 
+### Installing
 
-## Report
+Clone this repo and start it with live server to see the action :)
 
-Please use the report template on Moodle.
+1. Clone the repo:
 
-![](http://i.imgur.com/Ssfp7.gif)
+```bash
+git clone git@github.com:Noroff-Fagskole/semester-project-1-Michaelwasilewski.git
+```
 
 
-## Submission
+### Running
 
-- Submit everything to your github link.
-- If Moodle prompts your for a zip file zip a PDF up with the link inside it.
+To run the app simply clone this repo and open with live server.
+
+## Contact
+
+
+[My Facebook page](https://www.facebook.com/Wasiu1243/)
+
+[My LinkedIn page](https://www.linkedin.com/in/michal-wasilewski-751b8921a/)
+
+
+
