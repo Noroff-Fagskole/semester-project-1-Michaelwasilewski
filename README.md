@@ -10,7 +10,7 @@
 
 This project was about creating a science museum website for kids from ages 7 to 15 and families with children.
 
-You can add some bullet points if you'd like to:
+
 
 - An interactive science museum called the Community Science Museum is opening in your town/city.
 - Its core target audience is primary and middle school children (7-15) and families with young children.
@@ -19,7 +19,6 @@ You can add some bullet points if you'd like to:
 
 ## Built With
 
-You can list a the tech stack that you've used over here
 
 - HTML
 - CSS
